@@ -1,0 +1,110 @@
+{% extends './plantilla.html' %}
+{% load static %} <!--llamar static-->
+{% block body %}
+        <!-- Story Start -->
+        <div class="container-fluid story position-relative py-5" id="weddingStory" style="top:100px">
+            <div class="position-absolute" style="top: -35px; right: 0;">
+                <img src="img/tamp-bg-1.png" class="img-fluid" alt="">
+            </div>
+            <div class="position-absolute" style="top: -15px; left: 0; transform: rotate(150deg);">
+                <img src="img/tamp-bg-1.png" class="img-fluid" alt="">
+            </div>
+            <div class="container position-relative py-5">
+                <div class="text-center mb-5 wow fadeInUp" data-wow-delay="0.1s">
+                    <h5 class="text-uppercase text-primary fw-bold mb-4"></h5>
+                    <h1 class="display-4">Cafeteria Utc</h1>
+                </div>
+                <div class="story-timeline">
+                    <div class="row wow fadeInUp" data-wow-delay="0.2s">
+                        <div class="col-md-6 text-end border-0 border-top border-end border-secondary p-4">
+                            <div class="d-inline-flex align-items-center h-100">
+                                <img src="{% static 'img/aaaaaaaaa.jpg' %}" class="img-fluid w-100 img-border" alt="">
+                            </div>
+                        </div>
+                        <div class="col-md-6 border-start border-top border-secondary p-4 pe-0">
+                            <div class="h-100 d-flex flex-column justify-content-center bg-secondary p-4">
+                                <h4 class="mb-2 text-dark">Café Americano</h4>
+                                <p class="text-uppercase text-primary mb-2" style="letter-spacing: 3px;">Precio: $2.50</p>
+                                <p class="m-0 fs-5"> Un clásico café americano preparado con granos de alta calidad, perfecto para empezar el día con energía.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row flex-column-reverse flex-md-row wow fadeInUp" data-wow-delay="0.3s">
+                        <div class="col-md-6 text-end border-end border-top border-secondary p-4 ps-0">
+                            <div class="h-100 d-flex flex-column justify-content-center bg-secondary p-4">
+                                <h4 class="text-dark mb-2">Latte Macchiato</h4>
+                                <p class="text-uppercase text-primary mb-2" style="letter-spacing: 3px;">Precio: $3.00</p>
+                                <p class="m-0 fs-5">Espresso suave con una capa de leche vaporizada y una pizca de espuma de leche, ideal para los amantes del café cremoso.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6 border-start border-top border-secondary p-4">
+                            <div class="d-inline-flex align-items-center h-100">
+                                <img src="{% static 'img/latte.jpg' %}" class="img-fluid w-100 img-border" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row wow fadeInUp" data-wow-delay="0.4s">
+                        <div class="col-md-6 text-end border-end border-top border-secondary p-4 ps-0">
+                            <div class="d-inline-flex align-items-center h-100">
+                                <img src="{% static 'img/te verde.jpg' %}" class="img-fluid w-100 img-border" alt="">
+                            </div>
+                        </div>
+                        <div class="col-md-6 border-start border-top border-secondary p-4 pe-0">
+                            <div class="h-100 d-flex flex-column justify-content-center bg-secondary p-4">
+                                <h4 class="text-dark mb-2">Té Verde Matcha</h4>
+                                <p class="text-uppercase text-primary mb-2" style="letter-spacing: 3px;">Precio: $3.50</p>
+                                <p class="m-0 fs-5">Té verde japonés en polvo con propiedades antioxidantes y un sabor delicadamente dulce. Perfecto para quienes buscan un té reconfortante.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row flex-column-reverse flex-md-row wow fadeInUp" data-wow-delay="0.5s">
+                        <div class="col-md-6 text-end border border-start-0 border-secondary p-4 ps-0">
+                            <div class="h-100 d-flex flex-column justify-content-center bg-secondary p-4">
+                                <h4 class="text-dark mb-2">Croissant de Chocolate</h4>
+                                <p class="text-uppercase text-primary mb-2" style="letter-spacing: 3px;">Precio: $2.75</p>
+                                <p class="m-0 fs-5">Delicioso croissant horneado con chocolate derretido en su interior, una delicia para acompañar tu café o té.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6 border border-end-0 border-secondary p-4">
+                            <div class="d-inline-flex align-items-center h-100">
+                                <img src="{% static 'img/croisss.jpg' %}" class="img-fluid w-100 img-border" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Story End -->
+
+	<!-- Reservations -->
+
+	<div class="reservations text-center">
+		<div class="parallax_background parallax-window" data-parallax="scroll" data-image-src="images/reservations.jpg" data-speed="0.8"></div>
+		<div class="container">
+			<div class="row">
+				<div class="col">
+					<div class="reservations_content d-flex flex-column align-items-center justify-content-center">
+						<div class="res_stars page_subtitle">Cafe Utc</div>
+						<div class="res_title">Reservaciones</div>
+						<div class="res_form_container">
+							<form action="#" id="res_form" class="res_form">
+								<div class="d-flex flex-sm-row flex-column align-items-center justify-content-start">
+									<input type="text" id="datepicker" class="res_input" required="required">
+									<input type="text" class="res_input timepicker" required="required">
+									<select class="res_select">
+										<option disabled="" selected="">2 personas</option>
+										<option>3 personas</option>
+										<option>4 personas</option>
+										<option>5 personas</option>
+										<option>6 personas</option>
+									</select>
+								</div>
+								<button class="res_button">Reserva ya</button>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>		
+	</div>
+{% endblock %}

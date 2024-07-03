@@ -1,0 +1,107 @@
+{% extends './plantilla.html' %}
+{% load static %} <!--llamar static-->
+{% block body %}
+
+	<!-- Home -->
+
+	<div class="home">
+		<div class="parallax_background parallax-window" data-parallax="scroll" data-image-src="{% static 'plantilla/thevenue-gh-pages/images/home.jpg' %}" data-speed="0.8"></div>
+		<div class="home_container">
+			<div class="container">
+				<div class="row">
+					<div class="col">
+						<div class="home_content text-center">
+							<div class="home_subtitle page_subtitle">Cafeteria Utc</div>
+							<div class="home_title"><h1>Vive una experiencia unica y acojedora</h1></div>
+							<div class="home_text ml-auto mr-auto">
+								<p>Sientete como en casa y vive una experiencia maravillsosa con nuestro menu de exquizitas franquicias, teniendo el sason de casa</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="scroll_icon"></div>
+	</div>
+
+	<!-- Intro -->
+
+	<div class="intro">
+		<div class="container">
+			<div class="row">
+				<div class="col">
+					<div class="intro_content">
+						<div class="intro_subtitle page_subtitle">¡Bienvenidos a Cafetería UTC!</div>
+						<div class="intro_title"><h2>Descubre el Sabor de la Excelencia</h2></div>
+						<div class="intro_text">
+							<p>En Cafetería UTC, cada taza de café es una obra de arte y cada bocado es una experiencia única. Disfruta de nuestros exquisitos cafés artesanales, deliciosos pasteles recién horneados y desayunos saludables que harán de tu día algo especial.Ven y déjate sorprender por un ambiente acogedor y un servicio inigualable. Ya sea para una reunión con amigos, una pausa en tu día o un momento de relax, en Cafetería UTC te esperamos con los brazos abiertos y una sonrisa.</p>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-xl-4 col-md-6 intro_col">
+							<div class="intro_image"><img src="{% static 'plantilla/thevenue-gh-pages/images/intro_1.jpg' %}" alt="https://unsplash.com/@quanle2819"></div>
+						</div>
+						<div class="col-xl-4 col-md-6 intro_col">
+							<div class="intro_image"><img src="{% static 'plantilla/thevenue-gh-pages/images/intro_2.jpg' %}" alt="https://unsplash.com/@fabmag"></div>
+						</div>
+					</div>
+				</div>	
+			</div>
+		</div>
+	</div>
+
+	<!-- Video -->
+
+	<div class="video_section">
+		<div class="background_image" style="background-image:url({% static 'plantilla/thevenue-gh-pages/images/video.jpg' %})"></div>
+		<div class="video_section_content d-flex flex-column align-items-center justify-content-center text-center">
+			<div class="video_section_title">Food for the soul</div>
+			<div class="video_section_icon"><a class="vimeo video_button" href="https://player.vimeo.com/video/99340873?autoplay=1&loop=1&title=0&autopause=0"><i class="fa fa-play" aria-hidden="true"></i></a></div>
+		</div>
+	</div>
+
+	<!-- Signature Dish -->
+
+	<div class="sig">
+		<div class="sig_content_container">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-7">
+						<div class="sig_content">
+							<div class="sig_subtitle page_subtitle">¡Te invitamos a descubrir el sabor en Cafetería UTC!</div>
+							<div class="sig_title"><h1>Explora nuestro Menú Delicioso</h1></div>
+							<div class="rating_r sig_rating rating_r_5"><i></i><i></i><i></i><i></i><i></i></div>
+							<div class="sig_name_container d-flex flex-row align-items-start justify-content-start">
+								<div class="sig_name">En Cafetería UTC, cada detalle está cuidadosamente diseñado para ofrecerte una experiencia culinaria inolvidable. Nuestro menú es una celebración de sabores exquisitos y momentos especiales.</div>
+								<div class="sig_price ml-auto"></div>
+							</div>
+							<div class="sig_content_list">
+								<ul class="d-flex flex-row align-items-center justify-content-start">
+									<li>Cafés </li>
+									<li>Tés </li>
+									<li>Pasteles </li>
+									<li> Desayunos </li>
+								</ul>
+								</div>
+							<div class="button sig_button trans_200"><a href="{% url 'menu' %}">Menu</a></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="sig_image_container">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-7 offset-lg-5">
+						<div class="sig_image">
+							<div class="background_image" style="background-image:url({% static 'plantilla/thevenue-gh-pages/images/sig.jpg' %})"></div>
+							<img src="{% static 'plantilla/thevenue-gh-pages/images/sig.jpg' %}" alt="">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+{% endblock %}

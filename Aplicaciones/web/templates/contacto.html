@@ -1,0 +1,127 @@
+{% extends './plantilla.html' %}
+{% load static %} <!--llamar static-->
+{% block body %}
+
+        <!-- RSVP Form Start -->
+        <div class="container-fluid RSVP-form py-5" id="weddingRsvp" style="top:100px">
+            <div class="container py-5">
+                <div class="mb-5 text-center mx-auto wow fadeIn" data-wow-delay="0.1s" style="max-width: 800px;">
+                    <h1 class="display-2 text-primary">Cafeteria Utc</h1>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-md-10">
+                        <div class="p-5 border-secondary position-relative" style="border-style: double;">
+                            <div class="fw-bold text-primary bg-white d-flex align-items-center justify-content-center position-absolute border-secondary p-2 wow fadeIn" data-wow-delay="0.1s" style="width: 75%; border-style: double; top: 0; left: 50%; transform: translate(-50%, -50%);">
+                               Aceptamos tus opiniones escribenos!
+                            </div>
+                            <form>
+                                <div class="row gx-4 gy-3">
+                                    <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
+                                        <div class="form-group">
+                                            <label for="Examplename" class="form-label text-dark">Nombre</label>
+                                            <input type="text" class="form-control py-3 border-0" id="Examplename" placeholder="First Name">
+                                          </div>
+                                    </div>
+                                    <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
+                                        <div class="form-group">
+                                            <label for="Examplename" class="form-label text-dark">Apellido</label>
+                                            <input type="text" class="form-control py-3 border-0" id="Examplename" placeholder="Last Name">
+                                          </div>
+                                    </div>
+                                    <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
+                                        <div class="form-group">
+                                            <label for="Examplename" class="form-label text-dark">Email</label>
+                                            <input type="email" class="form-control py-3 border-0" id="Examplename" placeholder="Enter Your Email">
+                                          </div>
+                                    </div>
+                                    <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
+                                        <div class="form-group">
+                                            <label for="Examplename" class="form-label text-dark">Telefono</label>
+                                            <input type="text" class="form-control py-3 border-0" id="Examplename" placeholder="Enter Your Phone">
+                                          </div>
+                                    </div>
+                
+                                    <div class="col-12 wow fadeIn" data-wow-delay="0.1s">
+                                        <div class="form-group">
+                                            <label for="exampletextarea" class="form-label text-dark">Escribenos el motivo de tu mensaje</label>
+                                            <textarea name="text" class="form-control border-0" id="exampletextarea" cols="30" rows="5" placeholder="Message"></textarea>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 wow fadeIn" data-wow-delay="0.1s">
+                                        <div class="text-center border border-secondary p-4 my-4 position-relative">
+                                            <div class="fw-bold text-primary bg-white d-flex align-items-center justify-content-center position-absolute border-secondary p-2" style="width: 50%; border-style: double; top: 0; left: 50%; transform: translate(-50%, -50%);">
+                                                Tu opinion
+                                            </div>
+                                            <div class="mt-4">
+                                                <div class="row g-4">
+                                                    <div class="col-lg-6">
+                                                        <div class="d-flex justify-content-center">
+                                                            <div class="form-check d-flex">
+                                                                <input class="form-check-input me-2" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                                                                <label class="form-check-label text-dark" for="flexRadioDefault1">
+                                                                    Reclamo!
+                                                                </label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-6">
+                                                        <div class="d-flex justify-content-center">
+                                                            <div class="form-check d-flex">
+                                                                <input class="form-check-input me-2" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                                                                <label class="form-check-label text-dark" for="flexRadioDefault1">
+                                                                    Opinion
+                                                                </label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 text-center wow fadeIn" data-wow-delay="0.1s">
+                                        <button class="btn btn-primary btn-primary-outline-0 py-3 px-5">Submit Now</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-5">
+                <div class="row g-5 justify-content-center text-center">
+                    <div class="col-md-4 wow fadeIn" data-wow-delay="0.1s">
+                        <div class="p-4 border-secondary" style="border-style: double;">
+                            <h4>Telefono</h4>
+                            <a href="#" class="text-dark">+593 992 733 534</a>
+                        </div>
+                    </div>
+                    <div class="col-md-4 wow fadeIn" data-wow-delay="0.3s">
+                        <div class="p-4 border-secondary" style="border-style: double;">
+                            <h4>Ciudad</h4>
+                            <p class="mb-0 text-dark">
+                                Latacaunga-Cotopaxi-Ecuador
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 wow fadeIn" data-wow-delay="0.5s">
+                        <div class="p-4 border-secondary" style="border-style: double;">
+                            <h4>Direcion</h4>
+                            <p class="mb-0 text-dark">
+                                Av. Simón Rodríguez, Latacunga 
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-12 wow fadeIn" data-wow-delay="0.2s">
+                        <div class="border-secondary" style="border-style: double;">
+                            <iframe class="w-100" 
+                            style="height: 450px; margin-bottom: -6px;" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7979.622874313304!2d-78.4548725!3d-0.106428!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91d460483c1c1a3b%3A0x694a140aab02b1c!2sUniversidad%20T%C3%A9cnica%20de%20Cotopaxi%20(UTC)!5e0!3m2!1ses!2sec!4v1720021011198!5m2!1ses!2sec" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+        <!-- RSVP Form End -->
+
+{% endblock %}
+

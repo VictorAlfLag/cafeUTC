@@ -1,0 +1,155 @@
+{% extends './plantilla.html' %}
+{% load static %} <!--llamar static-->
+{% block body %}
+<style>
+    .gallery-img{
+        height: 400px;
+        overflow: hidden;
+    }
+    .gallery-img img{
+        height: 100%;
+    }
+</style>
+        <!-- Gallery Start -->
+        <div class="container-fluid gallery position-relative py-5" id="weddingGallery" style="top:100px">
+            <div class="position-absolute" style="top: -95px; right: 0;">
+                <img src="img/tamp-bg-1.png" class="img-fluid" alt="">
+            </div>
+            <div class="position-absolute" style="top: -80px; left: 0; transform: rotate(150deg);">
+                <img src="img/tamp-bg-1.png" class="img-fluid" alt="">
+            </div>
+            <div class="container position-relative py-5">
+                <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 800px;">
+                    <h1 class="display-2 text-dark">Cafeteria Utc</h1>
+                    <p class="fs-5 text-dark"> Eventos Especiales: ¡No te pierdas nuestros conciertos de jazz, talleres de barismo y más! Consulta nuestro calendario de eventos y únete a la diversión.</p>
+                </div>
+                <div class="row g-4">
+                    <div class="col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.2s">
+                        <div class="gallery-item">
+                            <div class="gallery-img">
+                                <img class="img-fluid w-100" src="{% static 'img/obrateatral.jpg' %}" alt="">
+                                <div class="hover-style"></div>
+                                <div class="search-icon">
+                                    <a href="{% static 'img/obrateatral.jpg' %}" data-lightbox="Gallery-1" class="my-auto"><i class="fas fa-plus btn-primary btn-primary-outline-0 p-3"></i></a>
+                                </div>
+                            </div>
+                            <div class="gallery-overlay bg-light border-secondary border-top-0 p-4" style="border-style: double;">
+                                <h5>Obra teatral</h5>
+                                <p class="text-dark mb-0">June 28, 2024</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.4s">
+                        <div class="gallery-item">
+                            <div class="gallery-img">
+                                <img class="img-fluid w-100" src="{% static 'img/saxophone.jpg' %}" alt="">
+                                <div class="hover-style"></div>
+                                <div class="search-icon">
+                                    <a href="{% static 'img/saxophone.jpg' %}" data-lightbox="Gallery-2" class="my-auto"><i class="fas fa-plus btn-primary btn-primary-outline-0 p-3"></i></a>
+                                </div>
+                            </div>
+                            <div class="gallery-overlay bg-light border-secondary border-top-0 p-4" style="border-style: double;">
+                                <h5>Musica de Jazz</h5>
+                                <p class="text-dark mb-0">June 28, 2024</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.6s">
+                        <div class="gallery-item">
+                            <div class="gallery-img">
+                                <img class="img-fluid w-100" src="{% static 'img/musicaconten.jpg' %}" alt="">
+                                <div class="hover-style"></div>
+                                <div class="search-icon">
+                                    <a href="{% static 'img/musicaconten.jpg' %}" data-lightbox="Gallery-3" class="my-auto"><i class="fas fa-plus btn-primary btn-primary-outline-0 p-3"></i></a>
+                                </div>
+                            </div>
+                            <div class="gallery-overlay bg-light border-secondary border-top-0 p-4" style="border-style: double;">
+                                <h5>Musica Conteporanea</h5>
+                                <p class="text-dark mb-0">June 28, 2024</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.8s">
+                        <div class="gallery-item">
+                            <div class="gallery-img">
+                                <img class="img-fluid w-100" src="{% static 'img/rome.jpg' %}" alt="">
+                                <div class="hover-style"></div>
+                                <div class="search-icon">
+                                    <a href="{% static 'img/rome.jpg' %}" data-lightbox="Gallery-4" class="my-auto"><i class="fas fa-plus btn-primary btn-primary-outline-0 p-3"></i></a>
+                                </div>
+                            </div>
+                            <div class="gallery-overlay bg-light border-secondary border-top-0 p-4" style="border-style: double;">
+                                <h5>Romeo y Julieta</h5>
+                                <p class="text-dark mb-0">June 28, 2024</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.2s">
+                        <div class="gallery-item">
+                            <div class="gallery-img">
+                                <img class="img-fluid w-100" src="{% static 'img/operaaaaaaaa.jpg' %}" alt="">
+                                <div class="hover-style"></div>
+                                <div class="search-icon">
+                                    <a href="{% static 'img/operaaaaaaaa.jpg' %}" data-lightbox="Gallery-5" class="my-auto"><i class="fas fa-plus btn-primary btn-primary-outline-0 p-3"></i></a>
+                                </div>
+                            </div>
+                            <div class="gallery-overlay bg-light border-secondary border-top-0 p-4" style="border-style: double;">
+                                <h5>Opera</h5>
+                                <p class="text-dark mb-0">June 28, 2024</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.4s">
+                        <div class="gallery-item">
+                            <div class="gallery-img">
+                                <img class="img-fluid w-100" src="{% static 'img/bluus.jpg' %}" alt="">
+                                <div class="hover-style"></div>
+                                <div class="search-icon">
+                                    <a href="{% static 'img/bluus.jpg' %}" data-lightbox="Gallery-6" class="my-auto"><i class="fas fa-plus btn-primary btn-primary-outline-0 p-3"></i></a>
+                                </div>
+                            </div>
+                            <div class="gallery-overlay bg-light border-secondary border-top-0 p-4" style="border-style: double;">
+                                <h5>Bluss</h5>
+                                <p class="text-dark mb-0">June 28, 2024</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.6s">
+                        <div class="gallery-item">
+                            <div class="gallery-img">
+                                <img class="img-fluid w-100" src="{% static 'img/diver.jpg' %}" alt="">
+                                <div class="hover-style"></div>
+                                <div class="search-icon">
+                                    <a href="{% static 'img/diver.jpg' %}" data-lightbox="Gallery-7" class="my-auto"><i class="fas fa-plus btn-primary btn-primary-outline-0 p-3"></i></a>
+                                </div>
+                            </div>
+                            <div class="gallery-overlay bg-light border-secondary border-top-0 p-4" style="border-style: double;">
+                                <h5>Diversion</h5>
+                                <p class="text-dark mb-0">June 28, 2024</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.8s">
+                        <div class="gallery-item">
+                            <div class="gallery-img">
+                                <img class="img-fluid w-100 h-100" src="{% static 'img/images.png' %}" alt="" style="width: 100%;">
+                                <div class="hover-style"></div>
+                                <div class="search-icon" style="width: 100%;">
+                                    <a href="{% static 'img/images.png' %}" data-lightbox="Gallery-8" class="my-auto"><i class="fas fa-plus btn-primary btn-primary-outline-0 p-3"></i></a>
+                                </div>
+                            </div>
+                            <div class="gallery-overlay bg-light border-secondary border-top-0 p-4" style="border-style: double;">
+                                <h5>Peliculas</h5>
+                                <p class="text-dark mb-0">June 28, 2024</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 text-center wow fadeIn" data-wow-delay="0.2s">
+                        <a class="btn btn-primary btn-primary-outline-0 py-3 px-5 me-2" href="#">Reserva <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Gallery end -->
+
+{% endblock %}
